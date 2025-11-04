@@ -105,7 +105,7 @@ export default function ChallengeClient({ challenge }: { challenge: ChallengeDat
             <div className="space-x-2">
               <button
                 onClick={resetCode}
-                className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 focus:bg-gray-600"
+                className="px-4 py-2 bg-gray-600 dark:bg-gray-500 text-white rounded hover:bg-gray-700 dark:hover:bg-gray-400 focus:bg-gray-700 dark:focus:bg-gray-400"
               >
                 重置
               </button>
@@ -121,7 +121,7 @@ export default function ChallengeClient({ challenge }: { challenge: ChallengeDat
           <textarea
             value={code}
             onChange={handleCodeChange}
-            className="w-full h-96 p-4 font-mono text-sm border-2 border-gray-300 rounded focus:border-primary-500 focus:outline-none"
+            className="w-full h-96 p-4 font-mono text-sm border-2 border-gray-300 dark:border-gray-600 rounded focus:border-primary-500 focus:outline-none bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
             spellCheck={false}
           />
 

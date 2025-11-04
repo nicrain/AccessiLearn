@@ -11,8 +11,8 @@ export default function LanguageSwitcher() {
         onClick={() => setLanguage('zh')}
         className={`px-3 py-1 rounded ${
           language === 'zh'
-            ? 'bg-primary-600 text-white'
-            : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+            ? 'bg-primary-600 dark:bg-primary-500 text-white'
+            : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-600'
         } font-semibold transition-colors`}
         aria-label="切换到中文"
         aria-pressed={language === 'zh'}
@@ -23,8 +23,8 @@ export default function LanguageSwitcher() {
         onClick={() => setLanguage('fr')}
         className={`px-3 py-1 rounded ${
           language === 'fr'
-            ? 'bg-primary-600 text-white'
-            : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+            ? 'bg-primary-600 dark:bg-primary-500 text-white'
+            : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-600'
         } font-semibold transition-colors`}
         aria-label="Passer au français"
         aria-pressed={language === 'fr'}
