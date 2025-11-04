@@ -92,9 +92,9 @@ export default function ChallengeClient({ challenge }: { challenge: ChallengeDat
     <div className="max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold mb-4">{challenge.title}</h2>
       
-      <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+      <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 mb-6">
         <h3 className="font-bold mb-2">📋 任务要求：</h3>
-        <p className="whitespace-pre-line text-gray-700">{challenge.instructions}</p>
+        <p className="whitespace-pre-line text-gray-900 dark:text-gray-100">{challenge.instructions}</p>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-6">
@@ -176,15 +176,15 @@ export default function ChallengeClient({ challenge }: { challenge: ChallengeDat
         {/* 预览 */}
         <section>
           <h3 className="text-xl font-bold mb-4">实时预览</h3>
-          <div className="border-2 border-gray-300 rounded p-4 bg-white min-h-96">
+          <div className="border-2 border-gray-300 dark:border-gray-600 rounded p-4 bg-white dark:bg-gray-800 min-h-96">
             <div 
               key={previewKey}
               dangerouslySetInnerHTML={{ __html: code }}
             />
           </div>
           
-          <div className="mt-4 p-4 bg-yellow-50 border border-yellow-300 rounded">
-            <p className="text-sm text-gray-700">
+          <div className="mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-700 rounded">
+            <p className="text-sm text-gray-900 dark:text-gray-100">
               💡 <strong>提示</strong>：编辑代码后点击&ldquo;更新预览&rdquo;按钮查看效果，
               完成后点击&ldquo;检查无障碍性&rdquo;验证您的答案。
             </p>

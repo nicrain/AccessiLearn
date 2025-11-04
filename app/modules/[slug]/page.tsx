@@ -219,11 +219,11 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
         <ReactMarkdown>{moduleData.theory}</ReactMarkdown>
       </section>
 
-      <section className="bg-primary-50 p-6 rounded-lg border-2 border-primary-200">
-        <h3 className="text-2xl font-bold mb-4 text-primary-800">
+      <section className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg border-2 border-primary-200 dark:border-primary-800">
+        <h3 className="text-2xl font-bold mb-4 text-primary-800 dark:text-primary-300">
           💪 实践挑战
         </h3>
-        <p className="text-gray-700 mb-4 whitespace-pre-line">
+        <p className="text-gray-900 dark:text-gray-100 mb-4 whitespace-pre-line">
           {moduleData.challengeInstructions}
         </p>
         <a 
