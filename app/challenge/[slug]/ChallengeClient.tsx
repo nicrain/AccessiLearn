@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { moduleContent } from '../../data/moduleContent';
 import { challengeData } from '../../data/challengeData';
@@ -24,18 +24,24 @@ interface ChallengeClientProps {
 
 export default function ChallengeClient({ slug }: ChallengeClientProps) {
   const { language, t } = useLanguage();
+  const [code, setCode] = useState('');
+  const [feedback, setFeedback] = useState<CheckResult[]>([]);
+  const [showSolution, setShowSolution] = useState(false);
+  const [previewKey, setPreviewKey] = useState(0);
   
   const moduleData = moduleContent[slug as keyof typeof moduleContent]?.[language];
   const challenge = challengeData[slug as keyof typeof challengeData]?.[language];
   
+  // Initialize code when challenge data is available
+  useEffect(() => {
+    if (challenge) {
+      setCode(challenge.initialCode);
+    }
+  }, [challenge]);
+  
   if (!moduleData || !challenge) {
     return <div>Challenge not found</div>;
   }
-
-  const [code, setCode] = useState(challenge.initialCode);
-  const [feedback, setFeedback] = useState<CheckResult[]>([]);
-  const [showSolution, setShowSolution] = useState(false);
-  const [previewKey, setPreviewKey] = useState(0);
 
   const checkAccessibility = () => {
     const parser = new DOMParser();
