@@ -205,18 +205,18 @@ export async function generateStaticParams() {
 }
 
 export default function ModulePage({ params }: { params: { slug: string } }) {
-  const module = modulesData[params.slug as keyof typeof modulesData];
+  const moduleData = modulesData[params.slug as keyof typeof modulesData];
 
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6">{module.title}</h2>
+      <h2 className="text-3xl font-bold mb-6">{moduleData.title}</h2>
       
       <section className="mb-12 prose prose-lg max-w-none">
-        <ReactMarkdown>{module.theory}</ReactMarkdown>
+        <ReactMarkdown>{moduleData.theory}</ReactMarkdown>
       </section>
 
       <section className="bg-primary-50 p-6 rounded-lg border-2 border-primary-200">
@@ -224,7 +224,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           💪 实践挑战
         </h3>
         <p className="text-gray-700 mb-4 whitespace-pre-line">
-          {module.challengeInstructions}
+          {moduleData.challengeInstructions}
         </p>
         <a 
           href={`/AccessiLearn/challenge/${params.slug}/`}
