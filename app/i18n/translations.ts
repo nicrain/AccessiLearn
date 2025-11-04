@@ -23,10 +23,12 @@ export const translations = {
       htmlBasics: {
         title: 'HTML 语义化基础',
         description: '学习如何正确使用语义化 HTML 元素，让您的网页结构清晰、易于理解。',
+        topics: ['语义化标签', '标题层级', 'ARIA 属性基础'],
       },
       keyboardTab: {
         title: '键盘导航与焦点管理',
         description: '掌握键盘导航和 tabindex 的正确使用，确保所有用户都能顺畅操作。',
+        topics: ['Tab 键导航', 'tabindex 属性', '焦点可见性'],
       },
       listTitle: '学习模块',
       listDesc: '每个模块包含理论讲解和实践挑战，让您在动手中掌握 Web 无障碍核心概念。',
@@ -36,6 +38,7 @@ export const translations = {
       pathStep1: '从 HTML 语义化基础 开始，建立无障碍网页的基础',
       pathStep2: '学习 键盘导航与焦点管理，确保所有用户都能操作',
       pathStep3: '完成每个模块的实践挑战，巩固所学知识',
+      startLearning: '开始学习',
     },
     // 挑战
     challenge: {
@@ -85,10 +88,12 @@ export const translations = {
       htmlBasics: {
         title: 'Bases du HTML sémantique',
         description: 'Apprenez à utiliser correctement les éléments HTML sémantiques pour rendre la structure de votre page Web claire et compréhensible.',
+        topics: ['Balises sémantiques', 'Hiérarchie des titres', 'Bases ARIA'],
       },
       keyboardTab: {
         title: 'Navigation clavier et gestion du focus',
         description: 'Maîtrisez la navigation au clavier et l\'utilisation correcte de tabindex pour garantir une manipulation fluide pour tous les utilisateurs.',
+        topics: ['Navigation Tab', 'Attribut tabindex', 'Visibilité du focus'],
       },
       listTitle: 'Modules d\'apprentissage',
       listDesc: 'Chaque module combine théorie et pratique pour vous aider à maîtriser les concepts clés de l\'accessibilité Web.',
@@ -98,6 +103,7 @@ export const translations = {
       pathStep1: 'Commencez par Bases du HTML sémantique pour établir les fondations',
       pathStep2: 'Apprenez Navigation clavier et gestion du focus pour garantir l\'utilisabilité',
       pathStep3: 'Complétez les défis pratiques de chaque module pour consolider vos connaissances',
+      startLearning: 'Commencer',
     },
     // Défi
     challenge: {
