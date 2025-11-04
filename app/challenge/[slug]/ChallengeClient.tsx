@@ -176,7 +176,7 @@ export default function ChallengeClient({ challenge }: { challenge: ChallengeDat
         {/* 预览 */}
         <section>
           <h3 className="text-xl font-bold mb-4">实时预览</h3>
-          <div className="border-2 border-gray-300 dark:border-gray-600 rounded p-4 bg-white dark:bg-gray-800 min-h-96">
+          <div className="border-2 border-gray-300 dark:border-gray-600 rounded p-4 bg-white dark:bg-gray-800 min-h-96 preview-content">
             <div 
               key={previewKey}
               dangerouslySetInnerHTML={{ __html: code }}

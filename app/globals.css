@@ -49,6 +49,106 @@ textarea:focus {
   outline-offset: 2px;
 }
 
+/* 预览区域样式 - 让 HTML 元素清晰可辨 */
+.preview-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+  color: #1f2937;
+}
+
+.preview-content h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.75em 0;
+  color: #374151;
+}
+
+.preview-content h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0.83em 0;
+  color: #4b5563;
+}
+
+.preview-content p {
+  margin: 1em 0;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.preview-content ul,
+.preview-content ol {
+  margin: 1em 0;
+  padding-left: 2em;
+  color: #1f2937;
+}
+
+.preview-content ul {
+  list-style-type: disc;
+}
+
+.preview-content ol {
+  list-style-type: decimal;
+}
+
+.preview-content li {
+  margin: 0.5em 0;
+}
+
+.preview-content article {
+  border: 2px solid #e5e7eb;
+  padding: 1.5em;
+  margin: 1em 0;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.preview-content section {
+  margin: 1.5em 0;
+  padding: 1em;
+  border-left: 4px solid #3b82f6;
+  background-color: #eff6ff;
+}
+
+.preview-content strong {
+  font-weight: bold;
+  color: #111827;
+}
+
+.preview-content em {
+  font-style: italic;
+}
+
+/* 深色模式下的预览样式 */
+@media (prefers-color-scheme: dark) {
+  .preview-content h1,
+  .preview-content h2,
+  .preview-content h3,
+  .preview-content p,
+  .preview-content ul,
+  .preview-content ol,
+  .preview-content li {
+    color: #f3f4f6;
+  }
+
+  .preview-content strong {
+    color: #ffffff;
+  }
+
+  .preview-content article {
+    border-color: #374151;
+    background-color: #1f2937;
+  }
+
+  .preview-content section {
+    border-left-color: #60a5fa;
+    background-color: #1e3a8a;
+  }
+}
+
+/* Skip to content link */
+
 /* 代码块样式 */
 pre {
   background: #1e293b;
